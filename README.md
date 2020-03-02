@@ -94,7 +94,7 @@ Como siempre, estos breakpoints están basados en la lógica de grilla de [Timpl
 
 En principio la idea no es usar nada muy loco, solamente tener una forma de organizar mejor los archivos y cascadas, siendo que la intención es usar clases específicas me parece piola poder aplica mayormente la lógica de cascadas de Sass, que permite tener las cosas anidadas de manera más intuitiva.
 
-Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.com/documentation/style-rules).
+Copio algunos ejemplos útiles que tomé de [acá](https://sass-lang.com/documentation/style-rules).
 
 
 ### Nesting normal, el que todos conocemos:
