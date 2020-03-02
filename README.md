@@ -124,6 +124,7 @@ Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.
 
       ```
       </td>
+      <td>
       ```
 
       nav ul {
@@ -141,7 +142,7 @@ Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.
       }
 
       ```
-      <td>
+
       </td>
     </tr>
   </tbody>
