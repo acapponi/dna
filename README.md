@@ -94,10 +94,9 @@ En principio la idea no es usar nada muy loco, solamente tener una forma de orga
 
 Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.com/documentation/style-rules)
 
+Nesting normal, el que todos conocemos:
 
-| Raw      | Compilado |
-| ----------- | ----------- |
-| ```
+```scss
 nav {
   ul {
     margin: 0;
@@ -114,7 +113,11 @@ nav {
   }
 }
 
-```      | ```
+```
+
+Compila como...
+
+```css
 nav ul {
   margin: 0;
   padding: 0;
@@ -129,7 +132,70 @@ nav a {
   text-decoration: none;
 }
 
-```       |
+```
+
+También se puede agrupar diferentes clases o selectores que tengan los mismos estilos con coma:
+
+```scss
+.alert, .warning {
+  ul, p {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 0;
+  }
+}
+```
+
+Compila como....
+
+```css
+.alert ul, .alert p, .warning ul, .warning p {
+  margin-right: 0;
+  margin-left: 0;
+  padding-bottom: 0;
+}
+```
+
+O usar selectores relativos:
+
+```scss
+ul > {
+  li {
+    list-style-type: none;
+  }
+}
+
+h2 {
+  + p {
+    border-top: 1px solid gray;
+  }
+}
+
+p {
+  ~ {
+    span {
+      opacity: 0.8;
+    }
+  }
+}
+```
+
+Compila como...
+
+```css
+ul > li {
+  list-style-type: none;
+}
+
+h2 + p {
+  border-top: 1px solid gray;
+}
+
+p ~ span {
+  opacity: 0.8;
+}
+
+```
 
 
 
