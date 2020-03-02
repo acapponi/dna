@@ -105,7 +105,6 @@ Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.
     <tr>
       <td>
       ```
-
       nav {
         ul {
           margin: 0;
@@ -126,7 +125,6 @@ Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.
       </td>
       <td>
       ```
-
       nav ul {
         margin: 0;
         padding: 0;
@@ -142,7 +140,6 @@ Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.
       }
 
       ```
-
       </td>
     </tr>
   </tbody>
