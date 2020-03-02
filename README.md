@@ -94,64 +94,42 @@ En principio la idea no es usar nada muy loco, solamente tener una forma de orga
 
 Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.com/documentation/style-rules)
 
-<table style="width:100%">
-  <thead>
-  <tr>
-    <td style="width:50%">Raw</td>
-    <td style="width:50%">Compilado</td>
-  </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-      ```
 
-      nav {
-        ul {
-          margin: 0;
-          padding: 0;
-          list-style: none;
-        }
+| Raw      | Compilado |
+| ----------- | ----------- |
+| ```
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 
-        li { display: inline-block; }
+  li { display: inline-block; }
 
-        a {
-          display: block;
-          padding: 6px 12px;
-          text-decoration: none;
-        }
-      }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
 
+```      | ```
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
 
-      ```
-
-
-      </td>
-      <td>
-
-
-      ```
-
-      nav ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-      nav li {
-        display: inline-block;
-      }
-      nav a {
-        display: block;
-        padding: 6px 12px;
-        text-decoration: none;
-      }
-
-      ```
-      
-      </td>
-    </tr>
-  </tbody>
-</table>
+```       |
 
 
 
