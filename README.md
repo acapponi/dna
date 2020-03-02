@@ -2,7 +2,9 @@
 
 La idea principal de esta versión es dejar de lado las clases y manejarse de manera más tradicional usando nombres de clases específicos (a lo possible).
 
-Para esto se borraron todas las clases de font-size, margin y padding, así como también line-height y letter-spacing. Sí mantuve clases helper que no estuvieran en bootstrap (Para ver cuales ir a [Timple BS](https://github.com/acapponi/timple-bs))
+Para esto se borraron todas las clases de font-size, margin y padding, así como también line-height y letter-spacing. Sí mantuve clases helper que no estuvieran en bootstrap (Para ver cuales ir a [Timple BS](https://github.com/acapponi/timple-bs)).
+
+
 
 ## Sobre los breakpoints
 
@@ -92,9 +94,10 @@ Como siempre, estos breakpoints están basados en la lógica de grilla de [Timpl
 
 En principio la idea no es usar nada muy loco, solamente tener una forma de organizar mejor los archivos y cascadas, siendo que la intención es usar clases específicas me parece piola poder aplica mayormente la lógica de cascadas de Sass, que permite tener las cosas anidadas de manera más intuitiva.
 
-Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.com/documentation/style-rules)
+Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.com/documentation/style-rules).
 
-Nesting normal, el que todos conocemos:
+
+###Nesting normal, el que todos conocemos:
 
 ```scss
 nav {
@@ -134,7 +137,7 @@ nav a {
 
 ```
 
-También se puede agrupar diferentes clases o selectores que tengan los mismos estilos con coma:
+###También se puede agrupar diferentes clases o selectores que tengan los mismos estilos con coma:
 
 ```scss
 .alert, .warning {
@@ -156,7 +159,7 @@ Compila como....
 }
 ```
 
-O usar selectores relativos:
+###O usar selectores relativos:
 
 ```scss
 ul > {
@@ -196,7 +199,6 @@ p ~ span {
 }
 
 ```
-
 
 
 La documentación completa de Sass se puede consultar [acá](https://sass-lang.com/documentation/).
