@@ -94,17 +94,17 @@ En principio la idea no es usar nada muy loco, solamente tener una forma de orga
 
 Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.com/documentation/style-rules)
 
-<table>
+<table style="width:100%">
   <thead>
   <tr>
-    <td>Raw</td>
-    <td>Compilado</td>
+    <td style="width:50%">Raw</td>
+    <td style="width:50%">Compilado</td>
   </tr>
   </thead>
   <tbody>
     <tr>
       <td>
-      ```scss
+      ```
 
       nav {
         ul {
@@ -124,7 +124,7 @@ Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.
 
       ```
       </td>
-      ```css
+      ```
 
       nav ul {
         margin: 0;
