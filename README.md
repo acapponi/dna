@@ -97,7 +97,7 @@ En principio la idea no es usar nada muy loco, solamente tener una forma de orga
 Copio acá abajo algunos ejemplos útiles que tomé de [acá](https://sass-lang.com/documentation/style-rules).
 
 
-###Nesting normal, el que todos conocemos:
+### Nesting normal, el que todos conocemos:
 
 ```scss
 nav {
@@ -137,7 +137,7 @@ nav a {
 
 ```
 
-###También se puede agrupar diferentes clases o selectores que tengan los mismos estilos con coma:
+### También se puede agrupar diferentes clases o selectores que tengan los mismos estilos con coma:
 
 ```scss
 .alert, .warning {
@@ -159,7 +159,7 @@ Compila como....
 }
 ```
 
-###O usar selectores relativos:
+### O usar selectores relativos:
 
 ```scss
 ul > {
