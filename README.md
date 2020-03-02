@@ -35,7 +35,7 @@ $width-xxl: 1820px;
 ```
 
 No incluí un breakpoint para mobile porque la idea es hacer mobile first.
-Si se necesita algo totalmente especifico, solo en mobile, se puede usar
+Si se necesita algo totalmente especifico para mobile se puede usar
 ```
 @include mq($until: tablet) {...}
 ```
