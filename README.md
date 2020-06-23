@@ -4,6 +4,9 @@ La idea principal de esta versión es dejar de lado las clases y manejarse de ma
 
 Para esto se borraron todas las clases de font-size, margin y padding, así como también line-height y letter-spacing. Sí mantuve clases helper que no estuvieran en bootstrap (Para ver cuales ir a [Timple BS](https://github.com/acapponi/timple-bs)).
 
+## Cómo editar archivos de sass en Atom
+
+Ver [este archivo](https://docs.google.com/document/d/1m9uPYXRIRIhiQjwn42EBjz4TttcrulpVjYG0-X0cLRc/edit?usp=sharing) para más información.
 
 
 ## Sobre los breakpoints
