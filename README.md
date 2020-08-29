@@ -113,4 +113,4 @@ Ver [este archivo](https://docs.google.com/document/d/1m9uPYXRIRIhiQjwn42EBjz4Tt
 
 #### Créditos
 
-Incluye [Bootstrap](https://getbootstrap.com), [Slick](http://kenwheeler.github.io/slick/) y [Hamburger.css](https://jonsuh.com/hamburgers/).
+Incluye [Bootstrap](https://getbootstrap.com), [Slick](http://kenwheeler.github.io/slick/), [Hamburger.css](https://jonsuh.com/hamburgers/) y [Sass MQ](https://github.com/sass-mq/sass-mq).
