@@ -7,8 +7,7 @@
 	<title>{Nombre del sitio}</title>
 
 	<link rel="stylesheet" href="assets/timple-bs/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="assets/hamburgers/hamburgers.css" />
-
+		<link rel="stylesheet" href="assets/slick-1.8.1/slick.css" />
 	<link rel="stylesheet" href="css/main.css" />
 
 	<!--[if lt IE 9]>
