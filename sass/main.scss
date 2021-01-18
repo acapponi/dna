@@ -1,18 +1,20 @@
-@import 'variables';
+/* =========== estilos base ============== */
+@import 'utilities/variables';
+@import 'utilities/mixins';
 
-@import 'bootstrap/bootstrap';
-@import 'template/breakpoints';
-@import 'template/fonts';
-@import 'template/helper';
+@import 'vendors/bootstrap/bootstrap';
+@import 'vendors/hamburgers';
+@import 'vendors/mq/breakpoints';
 
-@import 'template/hamburgers';
+@import 'base/fonts';
+@import 'base/helper';
+@import 'base/animations';
 
-@import 'mixins';
-@import 'animations';
-
-/* ========================= */
+/* ============ estilos custom ============= */
+//@import 'carpeta/archivo'
 
 
+/* ============ ↓ test, borrar ↓ ============= */
 .test h1{
   font-size:30px;
 
