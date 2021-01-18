@@ -1,0 +1,101 @@
+/* ============ MIXINS ============= */
+//@include name(attr);
+
+@mixin btn($color){
+  border-color:$color;
+  color: $color;
+  background-color: rgba(0,0,0,0);
+
+  &:hover,
+  &:active:focus{
+    border-color:$color;
+    color: #fff;
+    background-color: $color;
+  }
+}
+
+@mixin btn-invert($color){
+  border-color:$color;
+  color: #fff;
+  background-color: $color;
+
+  &:hover,
+  &:active:focus{
+    border-color:$color;
+    color: $color;
+    background-color: rgba(0,0,0,0);
+  }
+}
+
+
+
+@mixin font($xs, $md, $lg: $md, $xl: $lg, $xxl: $xl){
+  font-size: $xs;
+
+  @include mq($from: md, $until: lg){
+    font-size: $md;
+  }
+
+  @include mq($from: lg, $until: xl){
+    font-size: $lg;
+  }
+
+  @include mq($from: xl, $until: xxl){
+    font-size: $xl;
+  }
+
+  @include mq($from: xxl){
+    font-size: $xxl;
+  }
+}
+
+@mixin margin($xs, $md, $lg: $md, $xl: $lg, $xxl: $xl){
+  margin: $xs;
+
+  @include mq($from: md, $until: lg){
+    margin: $md;
+  }
+
+  @include mq($from: lg, $until: xl){
+    margin: $lg;
+  }
+
+  @include mq($from: xl, $until: xxl){
+    margin: $xl;
+  }
+
+  @include mq($from: xxl){
+    margin: $xxl;
+  }
+}
+
+@mixin padding($xs, $md, $lg: $md, $xl: $lg, $xxl: $xl){
+  padding: $xs;
+
+  @include mq($from: md, $until: lg){
+    padding: $md;
+  }
+
+  @include mq($from: lg, $until: xl){
+    padding: $lg;
+  }
+
+  @include mq($from: xl, $until: xxl){
+    padding: $xl;
+  }
+
+  @include mq($from: xxl){
+    padding: $xxl;
+  }
+}
+
+
+/* ============ EXTENDS ============= */
+// @extend %name;
+
+
+%bg-cover{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

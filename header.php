@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>{Nombre del sitio}</title>
 
-	<link rel="stylesheet" href="assets/timple-bs/css/bootstrap.min.css" />
+
 		<link rel="stylesheet" href="assets/slick-1.8.1/slick.css" />
 	<link rel="stylesheet" href="css/main.css" />
 

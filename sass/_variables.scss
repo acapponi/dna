@@ -1,0 +1,28 @@
+//colors
+$color-primary: #007bff;
+$color-secondary: #6c757d;
+
+//max-width for breakpoints
+$width-xs: 0;
+$width-sm: 768px; //tablet
+$width-md: 992px; //tabletLandscape
+$width-lg: 1260px; //desktopMini
+$width-xl: 1300px; //desktop
+$width-xxl: 1820px; //desktopExtraLarge
+
+//max-width for .container
+$width-container-sm:720px;
+$width-container-md:960px;
+$width-container-lg:1040px;
+$width-container-xl:1140px;
+$width-container-xxl:1800px;
+
+//hamburgers
+$hamburger-width:40px;
+$hamburger-height:24px;
+$hamburger-hover-opacity:0.7;
+$hamburger-bar-height:4px;
+$hamburger-bar-color:#000;
+$hamburger-bar-border-radius:4px;
+$hamburger-bar-position-top:-10px;
+$hamburger-bar-position-bottom:-10px;

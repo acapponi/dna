@@ -1,0 +1,30 @@
+@import 'variables';
+
+@import 'bootstrap/bootstrap';
+@import 'template/breakpoints';
+@import 'template/fonts';
+@import 'template/helper';
+
+@import 'template/hamburgers';
+
+@import 'mixins';
+@import 'animations';
+
+/* ========================= */
+
+
+.test h1{
+  font-size:30px;
+
+  @include mq($from: tablet, $until: desktop) {
+    font-size:40px;
+  }
+
+  @include mq($from: tablet, $until: desktopExtraLarge) {
+    font-size:50px;
+  }
+
+  @include mq($from: desktopExtraLarge) {
+    font-size:70px;
+  }
+}
