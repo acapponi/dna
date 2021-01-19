@@ -15,19 +15,18 @@
 </head>
 <body>
 
-    <div class="container py-4">
-        <div class="row">
-            <div class="col-sm-12">
-                <h1 class="mb-4">{Nombre del sitio} - Maquetación</h1>
-            </div>
-            <div class="col-sm-6">
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="home.php">Home</a></li>
-
-                </ul>
-            </div>
-        </div>
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="mb-4">{Nombre del sitio} - Maquetación</h1>
+      </div>
+      <div class="col-sm-6">
+				<div class="list-group">
+					<a href="home.php" class="list-group-item list-group-item-action">Home</a>
+				</div>
+      </div>
     </div>
+  </div>
 
 </body>
 </html>
