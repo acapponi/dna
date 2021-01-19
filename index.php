@@ -15,10 +15,10 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container py-4">
         <div class="row">
             <div class="col-sm-12">
-                <h1 style="margin-bottom:30px;">{Nombre del sitio} - Maquetación</h1>
+                <h1 class="mb-4">{Nombre del sitio} - Maquetación</h1>
             </div>
             <div class="col-sm-6">
                 <ul class="list-group">
