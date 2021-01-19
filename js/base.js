@@ -6,6 +6,19 @@ $(function(){
   })
 })
 
+$(function(){
+  $(".anchor").click(function(event){
+    event.preventDefault();
+    var offset = $($(this).attr('href')).offset().top;
+    var offset_mod = 0;
+    if($(this).attr('data-offset')){
+      offset_mod = parseInt($(this).attr('data-offset'));
+    }
+    offset = offset+offset_mod;
+    $('html, body').animate({scrollTop:offset}, 500);
+  });
+})
+
 jQuery(function($){
   if($('.navbar-off-canvas').length > 0){
     let navbar = $('.navbar-off-canvas');

@@ -49,46 +49,6 @@
   }
 }
 
-@mixin margin($xs, $md, $lg: $md, $xl: $lg, $xxl: $xl){
-  margin: $xs;
-
-  @include mq($from: md, $until: lg){
-    margin: $md;
-  }
-
-  @include mq($from: lg, $until: xl){
-    margin: $lg;
-  }
-
-  @include mq($from: xl, $until: xxl){
-    margin: $xl;
-  }
-
-  @include mq($from: xxl){
-    margin: $xxl;
-  }
-}
-
-@mixin padding($xs, $md, $lg: $md, $xl: $lg, $xxl: $xl){
-  padding: $xs;
-
-  @include mq($from: md, $until: lg){
-    padding: $md;
-  }
-
-  @include mq($from: lg, $until: xl){
-    padding: $lg;
-  }
-
-  @include mq($from: xl, $until: xxl){
-    padding: $xl;
-  }
-
-  @include mq($from: xxl){
-    padding: $xxl;
-  }
-}
-
 
 /* ============ EXTENDS ============= */
 // @extend %name;
