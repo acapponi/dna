@@ -8,6 +8,7 @@
 <script src="assets/bootstrap-4.4.1/js/bootstrap.min.js"></script>
 <script src="assets/slick-1.8.1/slick.min.js"></script>
 <script src="js/base.js"></script>
+<script src="js/animations.js"></script>
 <script src="js/main.js"></script>
 
 </body>
