@@ -17,7 +17,7 @@ if(exists('.reveal')){
 /* ============ slick ========== */
 
 
-$('.slick-fade').on('init', function(slick){
+$('.slick-animate__fade').on('init', function(slick){
   var slide = $('[data-slick-index="0"]');
   TweenMax.set($('.slick-slide').find(".slick-anim"), {opacity:0});
   setTimeout(function(){
@@ -31,7 +31,7 @@ $('.slick-fade').on('init', function(slick){
   TweenMax.staggerTo(slide.find(".slick-anim"), 1, {opacity:1}, 0.3);
 });
 
-$('.slick-from-top').on('init', function(slick){
+$('.slick-animate__from-top').on('init', function(slick){
   var slide = $('[data-slick-index="0"]');
   TweenMax.set($('.slick-slide').find(".slick-anim"), {opacity:0, y:-15});
   setTimeout(function(){
@@ -45,7 +45,7 @@ $('.slick-from-top').on('init', function(slick){
   TweenMax.staggerTo(slide.find(".slick-anim"), 1, {opacity:1, y:0}, 0.3);
 });
 
-$('.slick-from-bottom').on('init', function(slick){
+$('.slick-animate__from-bottom').on('init', function(slick){
   var slide = $('[data-slick-index="0"]');
   TweenMax.set($('.slick-slide').find(".slick-anim"), {opacity:0, y:15});
   setTimeout(function(){
