@@ -17,9 +17,9 @@
 
 	<div class="jumbotron">
 		<div class="container text-center">
-			<h1 class="display-4">Maquetación</h1>
+			<h1 class="display-4">{Nombre del sitio}</h1>
 			<hr class="my-4">
-			<h1 class="display-5">{Nombre del sitio}</h1>
+			<h1 class="display-5">Maquetación</h1>
 		</div>
 	</div>
 
