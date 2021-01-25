@@ -3,7 +3,7 @@
 .box-spinner-border,
 .box-spinner-grow{
   position: relative;
-  color:$preload-color-light;
+  color:$preload-light-color;
 
   &:before,
   &:after{
@@ -18,7 +18,7 @@
   &:before{
     width: 100%;
     height: 100%;
-    background: $preload-background-light;
+    background: $preload-light-background;
     top:0;
     left: 0;
     border-radius:inherit;
@@ -27,11 +27,11 @@
 
   &.dark{
     &:before{
-      background: $preload-background-dark;
+      background: $preload-dark-background;
     }
 
     &:after{
-      background:$preload-color-dark;
+      background:$preload-dark-color;
     }
   }
 
