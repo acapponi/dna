@@ -1,33 +1,37 @@
 @import '../fonts/spinners/style.css';
 
-.preload{
+.box-spinner-border,
+.box-spinner-grow{
   position: relative;
   color:$preload-color-light;
 
   &:before,
   &:after{
     display: block;
+    content: '';
     visibility: hidden;
     pointer-events: none;
-    z-index: 10;
     position: absolute;
     opacity: 0;
-
   }
 
   &:before{
-    content: '';
     width: 100%;
     height: 100%;
     background: $preload-background-light;
     top:0;
     left: 0;
+    border-radius:inherit;
+    z-index: 10;
   }
 
   &.dark{
-    color:$preload-color-dark;
     &:before{
       background: $preload-background-dark;
+    }
+
+    &:after{
+      background:$preload-color-dark;
     }
   }
 
@@ -41,55 +45,52 @@
   }
 
   &:after{
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
+    width: 2rem;
+    height: 2rem;
+    margin: -1em 0 0 -1em;
+    vertical-align: text-bottom;
+    border-radius: 50%;
     top: 50%;
     left: 50%;
-    z-index: 10;
-    font-size: 40px;
-    width: 1em;
-    height: 1em;
-    margin: -0.5em 0 0 -0.5em;
+    z-index: 11;
   }
 
+  &-sm{
+    &:after{
+      width: 1rem;
+      height: 1rem;
+      margin: -0.5em 0 0 -0.5em;
+    }
+  }
 
-  &.spinner1{ &:after{ content: "\e97a";} }
-  &.spinner2{ &:after{ content: "\e97b"; } }
-  &.spinner3{ &:after{ content: "\e97c"; } }
-  &.spinner4{ &:after{ content: "\e97d"; } }
-  &.spinner5{ &:after{ content: "\e97e"; } }
-  &.spinner6{ &:after{ content: "\e97f"; } }
-  &.spinner7{ &:after{ content: "\e980"; } }
-  &.spinner8{ &:after{ content: "\e981"; } }
-  &.spinner9{ &:after{ content: "\e982"; } }
-  &.spinner10{ &:after{ content: "\e983"; } }
-
-  //pulse 8 steps
-  &.spinner1,
-  &.spinner6,
-  &.spinner7{ &:after{ animation: spin 1s steps(8) infinite; } }
-
-  //pulse12 steps
-  &.spinner3{ &:after{ animation: spin 1s steps(12) infinite; } }
-
-  //spin
-  &.spinner2,
-  &.spinner4,
-  &.spinner5,
-  &.spinner8,
-  &.spinner9,
-  &.spinner10{ &:after{ animation: spin 2s linear infinite; } }
+  &-lg{
+    &:after{
+      width: 3rem;
+      height: 3rem;
+      margin: -1.5em 0 0 -1.5em;
+    }
+  }
 }
 
-@keyframes spin {
-  0% {transform: rotate(0deg) }
-  to { transform: rotate(1turn) }
+.box-spinner-border{
+  &:after{
+    border: .25em solid $preload-color-light;
+    border-right-color: transparent;
+    animation: spinner-border .75s linear infinite;
+  }
+
+  &-sm{
+    &:after{
+      border-width: .2em;
+    }
+  }
+
+}
+
+.box-spinner-grow{
+  &:after{
+    background-color: $preload-color-light;
+    animation: spinner-grow .75s linear infinite;
+  }
+
 }
