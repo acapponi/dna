@@ -1,0 +1,95 @@
+@import '../fonts/spinners/style.css';
+
+.preload{
+  position: relative;
+  color:$preload-color-light;
+
+  &:before,
+  &:after{
+    display: block;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 10;
+    position: absolute;
+    opacity: 0;
+
+  }
+
+  &:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: $preload-background-light;
+    top:0;
+    left: 0;
+  }
+
+  &.dark{
+    color:$preload-color-dark;
+    &:before{
+      background: $preload-background-dark;
+    }
+  }
+
+  &.loading{
+    &:before,
+    &:after{
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+    }
+  }
+
+  &:after{
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    font-size: 40px;
+    width: 1em;
+    height: 1em;
+    margin: -0.5em 0 0 -0.5em;
+  }
+
+
+  &.spinner1{ &:after{ content: "\e97a";} }
+  &.spinner2{ &:after{ content: "\e97b"; } }
+  &.spinner3{ &:after{ content: "\e97c"; } }
+  &.spinner4{ &:after{ content: "\e97d"; } }
+  &.spinner5{ &:after{ content: "\e97e"; } }
+  &.spinner6{ &:after{ content: "\e97f"; } }
+  &.spinner7{ &:after{ content: "\e980"; } }
+  &.spinner8{ &:after{ content: "\e981"; } }
+  &.spinner9{ &:after{ content: "\e982"; } }
+  &.spinner10{ &:after{ content: "\e983"; } }
+
+  //pulse 8 steps
+  &.spinner1,
+  &.spinner6,
+  &.spinner7{ &:after{ animation: spin 1s steps(8) infinite; } }
+
+  //pulse12 steps
+  &.spinner3{ &:after{ animation: spin 1s steps(12) infinite; } }
+
+  //spin
+  &.spinner2,
+  &.spinner4,
+  &.spinner5,
+  &.spinner8,
+  &.spinner9,
+  &.spinner10{ &:after{ animation: spin 2s linear infinite; } }
+}
+
+@keyframes spin {
+  0% {transform: rotate(0deg) }
+  to { transform: rotate(1turn) }
+}
