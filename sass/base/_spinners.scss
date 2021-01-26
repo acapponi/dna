@@ -27,10 +27,6 @@
     &:before{
       background: $preload-dark-background;
     }
-
-    &:after{
-      background:$preload-dark-color;
-    }
   }
 
   &.loading{
@@ -72,7 +68,7 @@
 
 .box-spinner-border{
   &:after{
-    border: .25em solid $preload-color-light;
+    border: .25em solid $preload-light-color;
     border-right-color: transparent;
     animation: spinner-border .75s linear infinite;
   }
@@ -83,12 +79,24 @@
     }
   }
 
+  &.dark{
+    &:after{
+      border-color: $preload-dark-color;
+      border-right-color: transparent;
+    }
+  }
+
 }
 
 .box-spinner-grow{
   &:after{
-    background-color: $preload-color-light;
+    background-color: $preload-light-color;
     animation: spinner-grow .75s linear infinite;
   }
 
+  &.dark{
+    &:after{
+      background-color: $preload-dark-color;
+    }
+  }
 }
