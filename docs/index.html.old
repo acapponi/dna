@@ -44,11 +44,16 @@
     <div class="container py-4">
       <div class="row justify-content-center">
         <div class="col-md-9">
-  				<div class="list-group">
+  				<div class="list-group mb-4">
             <li class="list-group-item active" aria-current="true">Animaciones</li>
   					<a href="slick-fade.html" class="list-group-item list-group-item-action" target=_blank>Slick - Text fade</a>
   					<a href="slick-from-top.html" class="list-group-item list-group-item-action" target=_blank>Slick - Text from top</a>
   					<a href="slick-from-bottom.html" class="list-group-item list-group-item-action" target=_blank>Slick - Text from bottom</a>
+  				</div>
+
+					<div class="list-group">
+            <li class="list-group-item active" aria-current="true">Utilities</li>
+  					<a href="nav-to-dropdown.html" class="list-group-item list-group-item-action" target=_blank>Nav to dropdown</a>
   					<a href="spinners.html" class="list-group-item list-group-item-action" target=_blank>Spinners</a>
   				</div>
         </div>
