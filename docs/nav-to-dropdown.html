@@ -29,54 +29,41 @@
 
     <div class="jumbotron">
       <div class="container text-center">
-        <h1 class="display-4">Text from top - Slick</h1>
+        <h1 class="display-4">Nav to dropdown</h1>
       </div>
     </div>
 
     <div class="container">
 
+      <div class="row">
+        <div class="col-12">
+          <p>Lista de links que se transforma en un dropdown en el breakpoint elegido. La estructura es identica a la estructura original de los dropdown de Bootstrap, pero cambian las clases del div parent.</p>
+          <p>
+            La clase sin modificar (nav-to-dropdown) genera un dropdown funcional, mientras que el modificador (nav-to-dropdown-**) indica a partir de que breakpoint ese dropdown se muestra como lista. Se puede usar cualquiera de los breakpoints que usamos normalmente.
+          </p>
+          <p>
+            La lista mantiene los estilos básicos del dropdown menu, pero se pueden pisar fácilmente.
+          </p>
+          <hr />
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-12">
 
-          <div class="slider-test slider-hero slick-animate__from-top">
+          <div class="nav-to-dropdown nav-to-dropdown-md">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
 
-            <div class="slider-hero__slide py-9 px-6" style="background-image: url(img/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg);">
-
-              <h1 class="title color-white mb-3 slick-anim" style="color:#fff;">Slide 1</h1>
-              <div class="subtitle color-white mb-5 slick-anim" style="color:#fff;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis in mauris et porta. Duis nunc tortor, placerat eget maximus at, commodo auctor metus. Suspendisse arcu dui, facilisis et sodales nec, facilisis a ante. Nulla
-                consectetur scelerisque lacus.
-              </div>
-              <a href="" class="btn btn-primary slick-anim" style="color:#fff;">More</a>
-
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-
-
-            <div class="slider-hero__slide py-9 px-6" style="background-image: url(img/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg);">
-
-              <h1 class="title color-white mb-3 slick-anim" style="color:#fff;">Slide 2</h1>
-              <div class="subtitle color-white mb-5 slick-anim" style="color:#fff;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis in mauris et porta. Duis nunc tortor, placerat eget maximus at, commodo auctor metus. Suspendisse arcu dui, facilisis et sodales nec, facilisis a ante. Nulla
-                consectetur scelerisque lacus.
-              </div>
-              <a href="" class="btn btn-primary slick-anim" style="color:#fff;">More</a>
-
-            </div>
-
-            <div class="slider-hero__slide py-9 px-6" style="background-image: url(img/nahil-naseer-xljtGZ2-P3Y-unsplash.jpg);">
-
-              <h1 class="title color-white mb-3 slick-anim" style="color:#fff;">Slide 3</h1>
-              <div class="subtitle color-white mb-5 slick-anim" style="color:#fff;">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis in mauris et porta. Duis nunc tortor, placerat eget maximus at, commodo auctor metus. Suspendisse arcu dui, facilisis et sodales nec, facilisis a ante. Nulla
-                consectetur scelerisque lacus.
-              </div>
-              <a href="" class="btn btn-primary slick-anim" style="color:#fff;">More</a>
-
-            </div>
-
-
           </div>
+
+
         </div>
       </div>
 
@@ -84,43 +71,23 @@
         <div class="col-12">
 
 
-<pre>&lt;div class="slider-test slick-animate__from-top">
+<pre>&lt;div class="nav-to-dropdown nav-to-dropdown-md">
+  &lt;a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown link
+  &lt;/a>
 
-    &lt;div>
-      &lt;h1 class="slick-anim">Slide 1&lt;/h1>
-      &lt;div class="slick-anim">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis in mauris et porta. Duis nunc tortor, placerat eget maximus at, commodo auctor metus. Suspendisse arcu dui, facilisis et sodales nec, facilisis a ante. Nulla
-        consectetur scelerisque lacus.
-      &lt;/div>
+  &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    &lt;a class="dropdown-item" href="#">Action&lt;/a>
+    &lt;a class="dropdown-item" href="#">Another action&lt;/a>
+    &lt;a class="dropdown-item" href="#">Something else here&lt;/a>
+  &lt;/div>
+&lt;/div></pre>
 
-    &lt;/div>
-
-    &lt;div>
-      &lt;h1 class="slick-anim">Slide 2&lt;/h1>
-      &lt;div class="slick-anim">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mollis in mauris et porta. Duis nunc tortor, placerat eget maximus at, commodo auctor metus. Suspendisse arcu dui, facilisis et sodales nec, facilisis a ante. Nulla
-        consectetur scelerisque lacus.
-      &lt;/div>
-
-    &lt;/div>
-
-    ...
-
-  &lt;/div></pre>
-
-  <pre>$('.slider-test').slick({
-    fade: true,
-  })</pre>
 
         </div>
       </div>
 
     </div>
-
-
-
-
-
 
 
 
