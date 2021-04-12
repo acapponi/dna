@@ -1,4 +1,4 @@
-.navbar-off-canvas{
+.navbar{
   &.navbar-expand {
   @each $breakpoint in map-keys($grid-breakpoints) {
     $next: breakpoint-next($breakpoint, $grid-breakpoints);
@@ -6,102 +6,48 @@
 
     &#{$infix} {
       @include media-breakpoint-down($breakpoint) {
-          .navbar-collapse{
-            position: fixed;
-            top:0;
-            left:0;
-            height: 100vh;
-            width:0;
-            transition: all ease-in-out 0.35s;
-            box-shadow: 1px 0px 5px rgba(0,0,0,0.3);
-            max-width:60vw;
-            z-index: 10;
-            overflow: hidden;
+          .offcanvas-collapse{
+            position: absolute;
+            top: $offcanvas-navbar-height; /* Height of navbar */
+            bottom: 0;
+            left: 100%;
+            width: 100%;
+            height: calc(100vh - #{$offcanvas-navbar-height});
+            padding-right: $offcanvas-padding-right;
+            padding-left: $offcanvas-padding-left;
+            overflow-y: auto;
+            visibility: hidden;
+            background-color: $offcanvas-background-color;
+            transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+          }
 
-            &:before{
-              content:'';
-              display: block;
-              width:100%;
-              height: 100%;
-              position: fixed;
-              top:0;
-              left:0;
-              z-index: -1;
-              background-color: rgba(0,0,0,0.5);
-              transition: all ease-in-out 0.2s;
-              transition-delay: 0.3s;
-              opacity: 0;
-              visibility: hidden;
-              pointer-events: none;
-            }
-
-            &.animating{
-              width:100%;
-
-              &:before{
-                opacity: 1;
-                visibility: visible;
-                pointer-events: all;
-                transition-delay: 0s;
-              }
-            }
-
-
-            &--content{
-              background-color: #fff;
-              overflow-x: hidden;
-              padding: 15px;
-              height: calc(100vh - 62px);
-            }
-
+          .offcanvas-collapse.open {
+            visibility: visible;
+            transform: translateX(-100%);
           }
         }
 
       @include media-breakpoint-up($next) {
-        .navbar-collapse{
-          &--content{
-            display: flex !important;
-            flex-basis: auto;
-            width:100%;
-          }
-        }
+
       }
 
     }
 
     }
-  }
-}
 
-.navbar-fade{
-  &.navbar-expand {
-  @each $breakpoint in map-keys($grid-breakpoints) {
-    $next: breakpoint-next($breakpoint, $grid-breakpoints);
-    $infix: breakpoint-infix($next, $grid-breakpoints);
+    &.fixed-top{
+      @each $breakpoint in map-keys($grid-breakpoints) {
+        $next: breakpoint-next($breakpoint, $grid-breakpoints);
+        $infix: breakpoint-infix($next, $grid-breakpoints);
 
-    &#{$infix} {
-      @include media-breakpoint-down($breakpoint) {
-          .navbar-collapse{
-            height: calc(100vh - 62px);
-            transition: opacity ease-in-out 0.35s;
-            z-index: 10;
-            overflow: hidden;
-            opacity:0;
-            background: inherit;
-            position: absolute;
-            top: 62px;
-            left: 0;
-            width: 100%;
-
-            &.animating{
-              opacity:1;
-
+        &#{$infix} {
+          @include media-breakpoint-down($breakpoint) {
+            .offcanvas-collapse{
+              position: fixed;
             }
-
           }
         }
-    }
-
+      }
     }
   }
 }

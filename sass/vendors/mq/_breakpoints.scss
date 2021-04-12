@@ -1,17 +1,3 @@
-$mq-breakpoints: (
-  tablet: $width-sm,
-  tabletLandscape: $width-md,
-  desktopMini: $width-lg,
-  desktop: $width-xl,
-  desktopExtraLarge: $width-xxl,
-  // short names
-  sm: $width-sm,
-  md: $width-md,
-  lg: $width-lg,
-  xl: $width-xl,
-  xxl: $width-xxl
-);
-
 // If _mq.scss is in your project:
 @import 'mq';
 

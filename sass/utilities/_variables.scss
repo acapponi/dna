@@ -2,20 +2,24 @@
 $color-primary: #007bff;
 $color-secondary: #6c757d;
 
-//max-width for breakpoints
-$width-xs: 0;
-$width-sm: 768px; //tablet
-$width-md: 992px; //tabletLandscape
-$width-lg: 1260px; //desktopMini
-$width-xl: 1300px; //desktop
-$width-xxl: 1820px; //desktopExtraLarge
+//links
+$link-color:$color-secondary;
+$link-decoration: underline;
+$link-hover-color: transparentize($link-color, 0.2);
 
-//max-width for .container
-$width-container-sm:720px;
-$width-container-md:960px;
-$width-container-lg:1040px;
-$width-container-xl:1140px;
-$width-container-xxl:1800px;
+//responsive
+$width-xs: 0;
+$width-sm: 576px; //mobile
+$width-md: 768px; //tablet
+$width-lg: 992px; //desktopMini
+$width-xl: 1300px; //desktop
+$width-xxl: 1400px; //desktopExtraLarge
+
+$width-container-sm:540px;
+$width-container-md:720px;
+$width-container-lg:960px;
+$width-container-xl:1240px;
+$width-container-xxl:1320px;
 
 //hamburgers
 $hamburger-width:40px;
@@ -32,3 +36,57 @@ $preload-light-background: rgba(255,255,255,0.7);
 $preload-light-color: #000;
 $preload-dark-background: rgba(0,0,0,0.7);
 $preload-dark-color: #fff;
+
+//offcanvas
+$offcanvas-navbar-height:56px;
+$offcanvas-background-color:#343a40;
+$offcanvas-padding-left:1rem;
+$offcanvas-padding-right:1rem;
+
+/* =================================================================== */
+/* ↓ Desde acá NO editar ↓ */
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2.25,
+  6: $spacer * 3,
+  7: $spacer * 5,
+  8: $spacer * 7,
+  9: $spacer * 10,
+  10: $spacer * 15,
+);
+
+$grid-breakpoints: (
+  xs: $width-xs,
+  sm: $width-sm, //mobile
+  md: $width-md, //tablet
+  lg: $width-lg, //desktopMini
+  xl: $width-xl, //desktop
+  xxl: $width-xxl //desktopExtraLarge
+);
+
+$container-max-widths: (
+  sm: $width-container-sm,
+  md: $width-container-md,
+  lg: $width-container-lg,
+  xl: $width-container-xl,
+  xxl: $width-container-xxl
+);
+
+$mq-breakpoints: (
+  tablet: $width-sm,
+  tabletLandscape: $width-md,
+  desktopMini: $width-lg,
+  desktop: $width-xl,
+  desktopExtraLarge: $width-xxl,
+  // short names
+  sm: $width-sm,
+  md: $width-md,
+  lg: $width-lg,
+  xl: $width-xl,
+  xxl: $width-xxl
+);
