@@ -29,8 +29,12 @@
 
 
 
-@mixin font($xs, $md, $lg: $md, $xl: $lg, $xxl: $xl){
+@mixin font($xs, $sm: $xs, $md: $sm, $lg: $md, $xl: $lg, $xxl: $xl){
   font-size: $xs;
+
+  @include mq($from: sm, $until: md){
+    font-size: $sm;
+  }
 
   @include mq($from: md, $until: lg){
     font-size: $md;
@@ -58,4 +62,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+%icomoon{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+%absolute-center{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
 }
