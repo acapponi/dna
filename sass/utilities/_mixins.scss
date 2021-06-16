@@ -1,34 +1,6 @@
 /* ============ MIXINS ============= */
 //@include name(attr);
 
-@mixin btn($color){
-  border-color:$color;
-  color: $color;
-  background-color: rgba(0,0,0,0);
-
-  &:hover,
-  &:active:focus{
-    border-color:$color;
-    color: #fff;
-    background-color: $color;
-  }
-}
-
-@mixin btn-invert($color){
-  border-color:$color;
-  color: #fff;
-  background-color: $color;
-
-  &:hover,
-  &:active:focus{
-    border-color:$color;
-    color: $color;
-    background-color: rgba(0,0,0,0);
-  }
-}
-
-
-
 @mixin font($xs, $sm: $xs, $md: $sm, $lg: $md, $xl: $lg, $xxl: $xl){
   font-size: $xs;
 

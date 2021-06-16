@@ -9,11 +9,20 @@ $link-hover-color: transparentize($link-color, 0.2);
 
 //responsive
 $width-xs: 0;
+$width-ssm: 415px; //mobile small
+$width-sm: 720px; //mobile
+$width-md: 1020px; //tablet
+$width-lg: 1200px; //desktopMini
+$width-xl: 1400px; //desktop
+$width-xxl: 1680px; //desktopExtraLarge
+
+/*OLD:
+$width-xs: 0;
 $width-sm: 576px; //mobile
 $width-md: 768px; //tablet
 $width-lg: 992px; //desktopMini
 $width-xl: 1300px; //desktop
-$width-xxl: 1400px; //desktopExtraLarge
+$width-xxl: 1400px; //desktopExtraLarge*/
 
 $width-container-sm:540px;
 $width-container-md:720px;
@@ -46,6 +55,8 @@ $offcanvas-padding-right:1rem;
 //forms
 $form-select-indicator-color: #343a40;
 $form-select-indicator: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='#{$form-select-indicator-color}' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/></svg>");
+
+$enable-smooth-scroll: true; // desactivar si se necesita un offset cuando se hace scroll (por ejemplo, si la navbar esta fixed)
 
 /* =================================================================== */
 /* ↓ Desde acá NO editar ↓ */

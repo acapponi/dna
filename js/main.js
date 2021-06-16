@@ -1,1 +1,3 @@
-//JS ACA
+jQuery(function($){
+    // Your jQuery code here, using the $
+});
