@@ -1,6 +1,6 @@
 var controller = new ScrollMagic.Controller();
 
-if(exists('.reveal')){
+if($('.reveal').length){
   var revealElements = document.getElementsByClassName("reveal");
 	for (var i=0; i<revealElements.length; i++) { // create a scene for each element
 		new ScrollMagic.Scene({

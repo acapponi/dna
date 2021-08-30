@@ -5,3 +5,11 @@
 		--tc-scroll-ofset:0;
 	}
 }
+
+:focus-visible{outline:none;}
+
+select{
+  -moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+}

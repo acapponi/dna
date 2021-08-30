@@ -18,20 +18,10 @@ jQuery(function($){
 
 
   /* ========== offcanvas collapse =========== */
-  if(exists('.offcanvas-collapse')){
+  if($('.offcanvas-collapse').length){
     document.querySelector('[data-toggle="offcanvas"]').addEventListener('click', function () {
     document.querySelector('.offcanvas-collapse').classList.toggle('open')
   })
   }
 
 })
-
-
-/* ========== functions =========== */
-function exists(c){
-  if($(c).length > 0){
-    return true;
-  }else {
-    return false;
-  }
-}
