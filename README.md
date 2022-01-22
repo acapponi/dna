@@ -1,7 +1,9 @@
 ![DNA](https://i.imgur.com/SknLHUG.png)
 # DNA - Front-end start kit
 
+## Breakpoints
 
+A los fines prácticos, mq queda deprecado. De ahora en más vamos a usar [los breakpoints de bootstrap](https://getbootstrap.com/docs/5.0/layout/breakpoints/) 
 
 ## Sobre Hamburger.css
 
