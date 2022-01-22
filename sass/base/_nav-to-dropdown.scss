@@ -10,13 +10,13 @@
           @if $breakpoint != xs {
 
             .dropdown-toggle{
-              @include mq($from:$breakpoint){
+              @include media-breakpoint-up($breakpoint){
                 display: none!important;
               }
             }
 
             .dropdown-menu{
-              @include mq($from:$breakpoint){
+              @include media-breakpoint-up($breakpoint){
                 display: block!important;
                 position: relative!important;
                 width: 100%;

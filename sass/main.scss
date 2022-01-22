@@ -4,7 +4,6 @@
 
 @import 'vendors/bootstrap/bootstrap';
 @import 'vendors/hamburgers';
-@import 'vendors/mq/mq';
 
 @import 'base/fonts';
 @import 'base/helper';
@@ -18,22 +17,3 @@
 
 /* ============ estilos custom ============= */
 @import 'modules/general';
-//@import 'carpeta/archivo'
-
-
-/* ============ ↓ test, borrar ↓ ============= */
-.test h1{
-  font-size:30px;
-
-  @include mq($from: tablet, $until: desktop) {
-    font-size:40px;
-  }
-
-  @include mq($from: tablet, $until: desktopExtraLarge) {
-    font-size:50px;
-  }
-
-  @include mq($from: desktopExtraLarge) {
-    font-size:70px;
-  }
-}
