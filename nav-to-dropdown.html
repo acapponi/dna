@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Showcase - Quick-start Kit</title>
+
+  <link rel="stylesheet" href="assets/slick-1.8.1/slick.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <style>
+    pre{
+      border: 1px solid #d8d2d2;
+      background-color: #eee;
+      padding: 15px;
+      border-radius: 4px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      font-size: 13px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <main>
+
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1 class="display-4">Nav to dropdown</h1>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <p>Lista de links que se transforma en un dropdown en el breakpoint elegido. La estructura es identica a la estructura original de los dropdown de Bootstrap, pero cambian las clases del div parent.</p>
+          <p>
+            La clase sin modificar (nav-to-dropdown) genera un dropdown funcional, mientras que el modificador (nav-to-dropdown-**) indica a partir de que breakpoint ese dropdown se muestra como lista. Se puede usar cualquiera de los breakpoints que usamos normalmente.
+          </p>
+          <p>
+            La lista mantiene los estilos básicos del dropdown menu, pero se pueden pisar fácilmente.
+          </p>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+
+          <div class="nav-to-dropdown nav-to-dropdown-md">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-12">
+
+
+<pre>&lt;div class="nav-to-dropdown nav-to-dropdown-md">
+  &lt;a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown link
+  &lt;/a>
+
+  &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    &lt;a class="dropdown-item" href="#">Action&lt;/a>
+    &lt;a class="dropdown-item" href="#">Another action&lt;/a>
+    &lt;a class="dropdown-item" href="#">Something else here&lt;/a>
+  &lt;/div>
+&lt;/div></pre>
+
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+  
+  <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+  <script src="assets/slick-1.8.1/slick.min.js"></script>
+  <script src="js/base.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    $('.slider-test').slick({
+      fade: true,
+      autoplay: true,
+      arrows: false
+    })
+  </script>
+
+</body>
+
+</html>
