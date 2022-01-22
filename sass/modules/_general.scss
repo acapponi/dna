@@ -1,7 +1,7 @@
 :root{
 	--tc-scroll-ofset:0; //numeros negativos suelen funcionar bien
 
-	@include mq($from:md){
+	@include media-breakpoint-up(md){
 		--tc-scroll-ofset:0;
 	}
 }

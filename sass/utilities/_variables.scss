@@ -1,3 +1,5 @@
+@use "sass:math";
+
 //colors
 $color-primary: #007bff;
 $color-secondary: #6c757d;
@@ -63,8 +65,8 @@ $enable-smooth-scroll: true; // desactivar si se necesita un offset cuando se ha
 $spacer: 1rem;
 $spacers: (
   0: 0,
-  1: $spacer / 4,
-  2: $spacer / 2,
+  1: math.div($spacer, 4),
+  2: math.div($spacer, 2),
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 2.25,
@@ -90,18 +92,4 @@ $container-max-widths: (
   lg: $width-container-lg,
   xl: $width-container-xl,
   xxl: $width-container-xxl
-);
-
-$mq-breakpoints: (
-  tablet: $width-sm,
-  tabletLandscape: $width-md,
-  desktopMini: $width-lg,
-  desktop: $width-xl,
-  desktopExtraLarge: $width-xxl,
-  // short names
-  sm: $width-sm,
-  md: $width-md,
-  lg: $width-lg,
-  xl: $width-xl,
-  xxl: $width-xxl
 );
