@@ -1,4 +1,5 @@
-![DNA](https://i.imgur.com/SknLHUG.png)
+<img src="https://i.imgur.com/SknLHUG.png" width="300">
+
 # DNA - Front-end start kit
 
 ## Breakpoints
@@ -25,5 +26,4 @@ Incluye:
 * [Bootstrap](https://getbootstrap.com)
 * [Slick](http://kenwheeler.github.io/slick/)
 * [Hamburger.css](https://jonsuh.com/hamburgers/)
-* [Sass MQ](https://github.com/sass-mq/sass-mq)
 * [Animate.css](https://animate.style)
