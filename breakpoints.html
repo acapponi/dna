@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Showcase - Quick-start Kit</title>
+
+    <link rel="stylesheet" href="assets/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <style>
+        pre {
+            border: 1px solid #d8d2d2;
+            background-color: #eee;
+            padding: 15px;
+            border-radius: 4px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            font-size: 13px;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light">
+    <main>
+
+        <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom shadow-sm">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://github.com/acapponi/quick-start-kit-sass/" target=_blank><img
+                        src="https://camo.githubusercontent.com/b584d21ac1947034bcd75e0ec0823ba640662ead705a960d2b4e31dd176395bb/68747470733a2f2f692e696d6775722e636f6d2f536b6e4c4855472e706e67"
+                        width="120"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse pt-md-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Animations
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="slick-fade.html">Slick - Text fade</a></li>
+                                <li><a class="dropdown-item" href="slick-from-top.html">Slick - Text from top</a></li>
+                                <li><a class="dropdown-item" href="slick-from-bottom.html">Slick - Text from bottom</a>
+                                </li>
+                                <li><a class="dropdown-item" href="reveal.html">Reveal effect on scroll</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Utilities
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="breakpoints.html">Breakpoints & Spacers</a></li>
+                                <li><a class="dropdown-item" href="nav-to-dropdown.html">Nav to dropdown</a></li>
+                                <li><a class="dropdown-item" href="navbar-offcanvas.html">Navbar offcanvas</a></li>
+                                <li><a class="dropdown-item" href="spinners.html">Spinners</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Useful resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                        href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                                        target="_blank">BS5 Documentation</a></li>
+                                <li><a class="dropdown-item"
+                                        href="https://getbootstrap.com/docs/5.0/examples/cheatsheet/"
+                                        target="_blank">BS5 Cheatsheet</a></li>
+                                <li><a class="dropdown-item" href="https://getbootstrap.com/docs/5.0/examples/masonry/"
+                                        target="_blank">Masorny implementation</a></li>
+                                <li><a class="dropdown-item" href="https://sass-lang.com/documentation"
+                                        target="_blank">Sass documentation</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dependencies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item"
+                                        href="https://getbootstrap.com/docs/5.0/getting-started/introduction/"
+                                        target="_blank">Bootstrap 5</a></li>
+                                <li><a class="dropdown-item" href="http://kenwheeler.github.io/slick/"
+                                        target="_blank">Slick</a></li>
+                                <li><a class="dropdown-item" href="https://jonsuh.com/hamburgers/"
+                                        target="_blank">Hamburger.css</a></li>
+                                <li><a class="dropdown-item" href="https://animate.style/"
+                                        target="_blank">Animate.css</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="btn btn-info text-light ms-md-2" target=_blank
+                                href="https://github.com/acapponi/quick-start-kit-sass/" role="button">Go to github</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="py-5">
+            <div class="container-xl text-center">
+                <h1 class="display-4">Grid breakpoints & Spacers</h1>
+            </div>
+        </div>
+
+
+        <div class="container-xl">
+
+            <div class="row">
+                <div class="col-12">
+                    <h2>Grid breakpoints</h2>
+                    <p>Modificamos los tamaños de los breakpoints por defecto de Bootstrap para amoldarnos a lo que en
+                        nuestra experiencia es lo más conveniente a la hora de maquetar un sitio web.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <table class="table mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">
+                                    xs<br>
+                                    <span class="fw-normal">&lt;415px</span>
+                                </th>
+                                <th scope="col">
+                                    ssm<br>
+                                    <span class="fw-normal">≥415px</span>
+                                </th>
+                                <th scope="col">
+                                    sm<br>
+                                    <span class="fw-normal">≥720px</span>
+                                </th>
+                                <th scope="col">
+                                    md<br>
+                                    <span class="fw-normal">≥1020px</span>
+                                </th>
+                                <th scope="col">
+                                    lg<br>
+                                    <span class="fw-normal">≥1200px</span>
+                                </th>
+                                <th scope="col">
+                                    xl<br>
+                                    <span class="fw-normal">≥1400px</span>
+                                </th>
+                                <th scope="col">
+                                    xxl<br>
+                                    <span class="fw-normal">≥1680px</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-nowrap" scope="row">Container <code class="fw-normal">max-width</code>
+                                </th>
+                                <td>None (auto)</td>
+                                <td>None (auto)</td>
+                                <td>540px</td>
+                                <td>720px</td>
+                                <td>960px</td>
+                                <td>1140px</td>
+                                <td>1320px</td>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap" scope="row">Class prefix</th>
+                                <td><code>.col-</code></td>
+                                <td><code>.col-ssm-</code></td>
+                                <td><code>.col-sm-</code></td>
+                                <td><code>.col-md-</code></td>
+                                <td><code>.col-lg-</code></td>
+                                <td><code>.col-xl-</code></td>
+                                <td><code>.col-xxl-</code></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+            
+
+            <div class="row">
+                <div class="col-12">
+                    
+                    <h2>Spacers</h2>
+                    <p>Además agregamos diferentes tamaños de spacers, para disponer de más opciones.</p>
+                    <p>El spacer base, al igual que en Bootstrap, tiene un tamaño de <code>1rem</code>. Esto corresponde al <code>font-size</code> del root (<code>&lt;html></code>), que es de <code>16px</code>.</p>
+                    <p>Con esto en mente, los diferentes spacers miden:</p>
+                   
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+
+                    <table class="table mb-4">
+                        <thead>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col">
+                                    0
+                                </th>
+                                <th scope="col">
+                                    1
+                                </th>
+                                <th scope="col">
+                                    2
+                                </th>
+                                <th scope="col">
+                                    3
+                                </th>
+                                <th scope="col">
+                                    4
+                                </th>
+                                <th scope="col">
+                                    5
+                                </th>
+                                <th scope="col">
+                                    6
+                                </th>
+                                <th scope="col">
+                                    7
+                                </th>
+                                <th scope="col">
+                                    8
+                                </th>
+                                <th scope="col">
+                                    9
+                                </th>
+                                <th scope="col">
+                                    10
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="text-nowrap" scope="row">
+                                    Calculation
+                                </th>
+                                <td><code>0</code></td>
+                                <td><code>1rem/4</code></td>
+                                <td><code>1rem/2</code></td>
+                                <td><code>1rem</code></td>
+                                <td><code>1rem*1.25</code></td>
+                                <td><code>1rem*2.25</code></td>
+                                <td><code>1rem*3</code></td>
+                                <td><code>1rem*5</code></td>
+                                <td><code>1rem*7</code></td>
+                                <td><code>1rem*10</code></td>
+                                <td><code>1rem*15</code></td>
+                            </tr>
+                            <tr>
+                                <th class="text-nowrap" scope="row">
+                                    Result
+                                </th>
+                                <td><code>0</code></td>
+                                <td><code>4px</code></td>
+                                <td><code>8px</code></td>
+                                <td><code>16px</code></td>
+                                <td><code>24px</code></td>
+                                <td><code>36px</code></td>
+                                <td><code>48px</code></td>
+                                <td><code>80px</code></td>
+                                <td><code>112px</code></td>
+                                <td><code>160px</code></td>
+                                <td><code>240px</code></td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <p>Tamto breakpoints como spacers pueden ser modificados desde el archivo de variables de sass para amoldarse a los requerimientos del diseño.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+
+    <script src="assets/bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="assets/slick-1.8.1/slick.min.js"></script>
+    <script src="js/base.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
