@@ -1,11 +1,11 @@
 @use "sass:math";
 
 //colors
-$color-primary: #007bff;
-$color-secondary: #6c757d;
+$primary: #007bff;
+$secondary: #6c757d;
 
 //links
-$link-color:$color-secondary;
+$link-color:$secondary;
 $link-decoration: underline;
 $link-hover-color: transparentize($link-color, 0.2);
 
@@ -48,11 +48,11 @@ $preload-light-color: #000;
 $preload-dark-background: rgba(0,0,0,0.7);
 $preload-dark-color: #fff;
 
-//offcanvas
-$offcanvas-navbar-height:56px;
-$offcanvas-background-color:#343a40;
-$offcanvas-padding-left:1rem;
-$offcanvas-padding-right:1rem;
+// navbar search
+$navbar-search-border-color: #000;
+$navbar-search-background: #fff;
+$navbar-search-border-radius:3px;
+$navbar-search-color:#333;
 
 //forms
 $form-select-indicator-color: #343a40;
@@ -79,12 +79,13 @@ $spacers: (
 
 $grid-breakpoints: (
   xs: $width-xs,
-  sm: $width-sm, //mobile
-  md: $width-md, //tablet
-  lg: $width-lg, //desktopMini
-  xl: $width-xl, //desktop
-  xxl: $width-xxl //desktopExtraLarge
-);
+  ssm: $width-ssm,
+  sm: $width-sm,
+  md: $width-md,
+  lg: $width-lg,
+  xl: $width-xl,
+  xxl: $width-xxl
+  );
 
 $container-max-widths: (
   sm: $width-container-sm,

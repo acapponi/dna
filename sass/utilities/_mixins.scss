@@ -1,26 +1,26 @@
 /* ============ MIXINS ============= */
 //@include name(attr);
 
-@mixin font($xs, $sm: $xs, $md: $sm, $lg: $md, $xl: $lg, $xxl: $xl){
+@mixin font($xs, $sm: $xs, $md: $sm, $lg: $md, $xl: $lg, $xxl: $xl) {
   font-size: $xs;
 
-  @include mq($from: sm, $until: md){
+  @include media-breakpoint-between(sm, md) {
     font-size: $sm;
   }
 
-  @include mq($from: md, $until: lg){
+  @include media-breakpoint-between(md, lg) {
     font-size: $md;
   }
 
-  @include mq($from: lg, $until: xl){
+  @include media-breakpoint-between(lg, xl) {
     font-size: $lg;
   }
 
-  @include mq($from: xl, $until: xxl){
+  @include media-breakpoint-between(xl, xxl) {
     font-size: $xl;
   }
 
-  @include mq($from: xxl){
+  @include media-breakpoint-up(xxl) {
     font-size: $xxl;
   }
 }

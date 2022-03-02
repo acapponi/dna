@@ -1,53 +1,68 @@
-.navbar{
-  &.navbar-expand {
-  @each $breakpoint in map-keys($grid-breakpoints) {
-    $next: breakpoint-next($breakpoint, $grid-breakpoints);
-    $infix: breakpoint-infix($next, $grid-breakpoints);
+.input-group-search {
+  border: 1px solid $navbar-search-border-color;
+  background: $navbar-search-background;
+  transition: all ease 0.2s;
+  height: 33px;
+  border-radius: $navbar-search-border-radius;
 
-    &#{$infix} {
-      @include media-breakpoint-down($breakpoint) {
-          .offcanvas-collapse{
-            position: absolute;
-            top: $offcanvas-navbar-height; /* Height of navbar */
-            bottom: 0;
-            left: 100%;
-            width: 100%;
-            height: calc(100vh - #{$offcanvas-navbar-height});
-            padding-right: $offcanvas-padding-right;
-            padding-left: $offcanvas-padding-left;
-            overflow-y: auto;
-            visibility: hidden;
-            background-color: $offcanvas-background-color;
-            transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-          }
+  .input-group-text {
+    border: 0;
+    background: 0;
+    color: $navbar-search-color;
+    height: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: inherit;
+  }
 
-          .offcanvas-collapse.open {
-            visibility: visible;
-            transform: translateX(-100%);
-          }
+  .form-control {
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    padding-left: 0;
+    height: 100%;
+    color: $navbar-search-color;
+    font-size: inherit;
+
+    &:focus {
+      box-shadow: none;
+      // background-color: rgba(196,196,196,.15)!important;
+    }
+  }
+
+
+  &--anim {
+    border: 1px solid rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
+
+    .input-group-text {
+      cursor: pointer;
+    }
+
+    .form-control {
+      transition: all ease 0.2s;
+      opacity: 0;
+      width: 0;
+    }
+
+    &.onshow {
+      border: 1px solid #{$navbar-search-border-color};
+      background: $navbar-search-background;
+
+      .form-control {
+        opacity: 1;
+        width: 110px;
+
+        @include media-breakpoint-up(lg) {
+          width: 312px;
         }
-
-      @include media-breakpoint-up($next) {
-
       }
 
     }
+  }
 
-    }
-
-    &.fixed-top{
-      @each $breakpoint in map-keys($grid-breakpoints) {
-        $next: breakpoint-next($breakpoint, $grid-breakpoints);
-        $infix: breakpoint-infix($next, $grid-breakpoints);
-
-        &#{$infix} {
-          @include media-breakpoint-down($breakpoint) {
-            .offcanvas-collapse{
-              position: fixed;
-            }
-          }
-        }
-      }
+  &-lg {
+    @include media-breakpoint-up(sm) {
+      height: 44px;
     }
   }
 }

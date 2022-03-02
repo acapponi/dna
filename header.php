@@ -20,7 +20,10 @@
 	 <![endif]-->
 
 </head>
-<body>
+<?php
+$bodyclass = (isset($GLOBALS['bodyclass']))?$GLOBALS['bodyclass']:'';
+?>
+<body class="<?php echo $bodyclass; ?>">
 	<main>
 	<!--[if lt IE 10]>
 	<div class="ie8-alert text-center" style="background: #C33;  color: #FFF;  text-align: center; margin-top: 60px;">
