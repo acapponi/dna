@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>Showcase - Quick-start Kit</title>
 
-  <link rel="stylesheet" href="assets/slick-1.8.1/slick.css" />
   <link rel="stylesheet" href="css/main.css" />
 
   <style>
@@ -24,7 +23,7 @@
 
 </head>
 
-<body class="bg-light">
+<body class="bg-light" style="overflow-x: hidden;">
 	<main>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom shadow-sm">
@@ -88,57 +87,75 @@
       </div>
     </nav>
 
-    <div class="py-5">
-      <div class="container-xl text-center">
-        <h1 class="display-4">Reveal effect on scroll</h1>
-      </div>
+  <div class="py-5">
+    <div class="container-xl text-center">
+      <h1 class="display-4">Navbar search</h1>
     </div>
+  </div>
 
 
-    <div class="container-xl py-4">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-info bg-gradient sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" method="get" action="/">
+          <div class="input-group input-group-search input-group-search--anim my-auto">
+            <span class="input-group-text" id="basic-addon1">🔎</span>
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="s">
+          </div>
+        </form>
+    </div>
+  </div>
+</nav>
 
 
-      <div class="row">
-        <div class="col-12">
+   
 
-            <h2 class="reveal">Scroll to see the effect in action</h2>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-            <div class="reveal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum repellendus nostrum, cum labore saepe, repellat aperiam consequatur necessitatibus architecto voluptates suscipit neque quisquam autem nobis obcaecati esse veritatis quibusdam ad!</div>
-
-
-        </div>
-      </div>
+    <div class="container-xl mt-5">
 
       <div class="row mt-5">
-        <div class="col-12 reveal">
+        <div class="col-12">
 
 
-<pre>&lt;div class="reveal">
+<pre>&lt;form class="d-flex" method="get" action="/">
+          &lt;div class="input-group input-group-search input-group-search--anim my-auto">
+            &lt;span class="input-group-text" id="basic-addon1">&lt;span class="icon-search">&lt;/span>&lt;/span>
+            &lt;input class="form-control" type="search" placeholder="Search" aria-label="Search" name="s">
+          &lt;/div>
+        &lt;/form>
+</pre>
 
-
-    ...
-
-  &lt;/div></pre>
 
         </div>
       </div>
 
     </div>
-
-
-
-
-
 
 
 
