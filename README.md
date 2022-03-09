@@ -9,19 +9,6 @@ En el [showcase](https://acapponi.github.io/dna/) se pueden ver ejemplos de anim
 
 A los fines prácticos, mq queda deprecado. De ahora en más vamos a usar [los breakpoints de bootstrap](https://getbootstrap.com/docs/5.0/layout/breakpoints/) 
 
-## Sobre Hamburger.css
-
-Se incluye también [Hamburger.css](https://jonsuh.com/hamburgers/).
-Para usar en el navbar de Bootstrap, reemplazar el elemento `navbar-toggler` por:
-
-```html
-<button class="navbar-toggler hamburger hamburger--collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-	<div class="hamburger-box">
-		<div class="hamburger-inner"></div>
-	</div>
-</button>
-```
-
 
 #### Créditos
 
