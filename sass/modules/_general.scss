@@ -1,10 +1,16 @@
 :root{
 	--tc-scroll-ofset:0; //numeros negativos suelen funcionar bien
-
+	
 	@include media-breakpoint-up(md){
 		--tc-scroll-ofset:0;
 	}
 }
+
+html{
+	font-size:16px;
+}
+
+/* reset form styles */
 
 :focus-visible{outline:none;}
 
@@ -13,3 +19,5 @@ select{
 	-webkit-appearance: none;
 	appearance: none;
 }
+
+/* =========================== */
