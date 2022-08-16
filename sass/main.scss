@@ -5,12 +5,16 @@
 @import 'vendors/bootstrap/bootstrap';
 @import 'vendors/hamburgers';
 
+@import 'base/resets';
 @import 'base/fonts';
 @import 'base/helper';
 @import 'base/animations';
 @import 'base/spinners';
 @import 'base/nav-to-dropdown';
 @import 'base/navbar';
+
+/* ============ estilos para las barras de bid ============= */
+// @import 'base/fix_bid';
 
 /* ============ estilos opcionales ============= */
 @import 'vendors/animate.min.css';
