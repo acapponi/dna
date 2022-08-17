@@ -10,14 +10,14 @@
 @import 'base/helper';
 @import 'base/animations';
 @import 'base/spinners';
-@import 'base/nav-to-dropdown';
 @import 'base/navbar';
 
-/* ============ estilos para las barras de bid ============= */
+/* =========== modulos optativos ============= */
+// @import 'base/nav-to-dropdown';
 // @import 'base/fix_bid';
 
-/* ============ estilos opcionales ============= */
+/* =========== estilos opcionales ============ */
 @import 'vendors/animate.min.css';
 
-/* ============ estilos custom ============= */
+/* ============= estilos custom ============== */
 @import 'modules/general';
