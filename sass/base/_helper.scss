@@ -7,15 +7,6 @@ a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: " ";
-	clear: both;
-	height: 0;
-}
-
 .animated-all{
 	transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -23,8 +14,8 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	-o-transition: all 0.3s ease-in-out;
 }
 
-.ul-plain, .ol-plain {
+.list-plain {
 	list-style: none;
 	margin: 0px;
-  padding: 0px;
+	padding: 0px;
 }
